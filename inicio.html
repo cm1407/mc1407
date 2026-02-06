@@ -16,9 +16,14 @@
 
 /* Fondo y cuerpo */
 body {
-    background-color: #141414;
+     /* Degradado negro hacia transparente sobre la imagen */
+    background: 
+        linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,1)),
+        url('imagenes/fondo_cabecera.jpg') center/cover no-repeat fixed;
+    
     color: white;
     min-height: 100vh;
+    background-attachment: fixed; /* Mantiene la imagen fija mientras scroll */
 }
 
 /* Barra superior */
@@ -206,4 +211,5 @@ window.logout = function(){
 
 </body>
 </html>
+
 

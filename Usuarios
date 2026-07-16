@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios - Vuitfy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Vuitfy</h1>
+</header>
+
+<nav class="top-menu">
+    <a href="principal.html">🏠 Inicio</a>
+    <a href="documentos.html">📄 Documentos</a>
+    <a href="usuarios.html" class="activo">👥 Usuarios</a>
+    <a href="ajustes.html">⚙ Ajustes</a>
+</nav>
+
+<main class="section">
+
+    <h2>Usuarios</h2>
+
+    <div class="usuario">
+        <h3>Marcos</h3>
+        <p>Administrador</p>
+    </div>
+
+    <div class="usuario">
+        <h3>Laura</h3>
+        <p>Recursos Humanos</p>
+    </div>
+
+    <div class="usuario">
+        <h3>Carlos</h3>
+        <p>Informática</p>
+    </div>
+
+</main>
+
+</body>
+</html>

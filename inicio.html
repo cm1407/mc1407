@@ -54,29 +54,38 @@ header nav a:hover {
     color: #e50914;
 }
 /* ========================= */
-/* PANEL SUPERIOR RESPONSIVE */
+/* PANEL SUPERIOR DESPLAZABLE */
 /* ========================= */
 
 .top-menu{
     display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:10px;
+    gap:12px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+
+    padding:12px 16px;
+
     background:#1f1f1f;
-    padding:12px;
     border-bottom:1px solid #333;
+
+    scrollbar-width:none;       /* Firefox */
+    -ms-overflow-style:none;    /* IE */
+}
+
+.top-menu::-webkit-scrollbar{
+    display:none;
 }
 
 .top-menu a{
+    flex:0 0 auto;
     color:white;
     text-decoration:none;
-    background:#2a2a2a;
-    padding:10px 16px;
-    border-radius:8px;
-    font-size:15px;
+    background:#2b2b2b;
+    padding:10px 18px;
+    border-radius:25px;
     font-weight:600;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .top-menu a:hover{
@@ -87,46 +96,6 @@ header nav a:hover {
     background:#e50914;
 }
 
-/* ========================= */
-/* MÓVIL */
-/* ========================= */
-
-@media (max-width:768px){
-
-    .top-menu{
-        justify-content:center;
-        gap:8px;
-        padding:10px;
-    }
-
-    .top-menu a{
-        flex:1 1 calc(50% - 10px);
-        text-align:center;
-        font-size:14px;
-        padding:12px;
-        min-width:120px;
-    }
-
-}
-
-/* ========================= */
-/* MÓVILES PEQUEÑOS */
-/* ========================= */
-
-@media (max-width:480px){
-
-    .top-menu{
-        flex-direction:column;
-        align-items:stretch;
-    }
-
-    .top-menu a{
-        width:100%;
-        min-width:unset;
-        font-size:15px;
-    }
-
-}
 .top-menu .activo{
     background:#e50914;
 }
@@ -205,26 +174,20 @@ footer {
 
 </head>
 <body>
-
-<header>
     
     <nav class="top-menu">
 
-    <a href="inicio.html" class="activo">Inicio</a>
-
-    <a href="noticias.html">Noticias</a>
-
-    <a href="documentos.html">Documentos</a>
-
-    <a href="galeria.html">Galería</a>
-
-    <a href="videos.html">Vídeos</a>
-
-    <a href="calendario.html">Calendario</a>
-
-    <a href="personal.html">Personal</a>
-
-    <a href="ajustes.html">Ajustes</a>
+    <a href="principal.html" class="activo">🏠 Inicio</a>
+    <a href="noticias.html">📰 Noticias</a>
+    <a href="documentos.html">📄 Documentos</a>
+    <a href="galeria.html">📷 Galería</a>
+    <a href="videos.html">🎥 Vídeos</a>
+    <a href="personal.html">👥 Personal</a>
+    <a href="calendario.html">📅 Calendario</a>
+    <a href="proyectos.html">📂 Proyectos</a>
+    <a href="formularios.html">📝 Formularios</a>
+    <a href="contacto.html">📞 Contacto</a>
+    <a href="ajustes.html">⚙ Ajustes</a>
 
 </nav>
 </header>

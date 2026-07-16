@@ -16,14 +16,13 @@
 
 /* Fondo y cuerpo */
 body {
-     /* Degradado negro hacia transparente sobre la imagen */
-    background: 
+    background:
         linear-gradient(to bottom, rgba(20,20,20,0.8), rgba(20,20,20,1)),
         url('imagenes/fondo_cabecera.jpg') center/cover no-repeat fixed;
-    
+
     color: white;
     min-height: 100vh;
-    background-attachment: fixed; /* Mantiene la imagen fija mientras scroll */
+    background-attachment: fixed;
 }
 
 /* Barra superior */
@@ -54,6 +53,35 @@ header nav a {
 header nav a:hover {
     color: #e50914;
 }
+/* Barra de secciones */
+.top-menu{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background:#1f1f1f;
+    padding:15px;
+    position:sticky;
+    top:74px;
+    z-index:99;
+    border-bottom:1px solid #333;
+}
+
+.top-menu a{
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:6px;
+    transition:0.3s;
+    font-weight:600;
+}
+
+.top-menu a:hover{
+    background:#e50914;
+}
+
+.top-menu .activo{
+    background:#e50914;
+}
 
 /* Sección principal */
 .main-banner {
@@ -75,7 +103,7 @@ header nav a:hover {
     max-width: 600px;
 }
 
-/* Carrusel de películas */
+/* Carrusel */
 .section {
     padding: 30px 40px;
 }
@@ -101,7 +129,6 @@ header nav a:hover {
     border-radius: 4px;
 }
 
-/* Cada “película” */
 .movie {
     min-width: 200px;
     border-radius: 6px;
@@ -131,48 +158,58 @@ footer {
 </head>
 <body>
 
-<!-- Barra superior -->
 <header>
-    <h1>MC1407</h1>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Series</a>
-        <a href="#">Películas</a>
-        <a href="#">Mi lista</a>
-        <a href="#" onclick="logout()">Salir</a>
-    </nav>
+    
+    <nav class="top-menu">
+
+    <a href="inicio.html" class="activo">Inicio</a>
+
+    <a href="noticias.html">Noticias</a>
+
+    <a href="documentos.html">Documentos</a>
+
+    <a href="galeria.html">Galería</a>
+
+    <a href="videos.html">Vídeos</a>
+
+    <a href="calendario.html">Calendario</a>
+
+    <a href="personal.html">Personal</a>
+
+    <a href="ajustes.html">Ajustes</a>
+
+</nav>
 </header>
 
-<!-- Banner principal -->
 <section class="main-banner">
-    <h2>Bienvenido a Mc</h2>
-    <p> Zona privada para ver contenido exclusivo solo para nosotros.</p>
+    <h2>Bienvenido a Vuitfy</h2>
+    <p>Zona privada para ver contenido informativo solo para mi.</p>
 </section>
 
-<!-- Carrusel de películas -->
 <section class="section">
     <h3>Recomendadas</h3>
+
     <div class="movies-row">
-        <div class="movie"><img src="https://picsum.photos/id/1011/200/300" alt="Película 1"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1012/200/300" alt="Película 2"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1013/200/300" alt="Película 3"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1015/200/300" alt="Película 4"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1016/200/300" alt="Película 5"></div>
+        <div class="movie"><img src="https://picsum.photos/id/1011/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1012/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1013/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1015/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1016/200/300" alt=""></div>
     </div>
 </section>
 
 <section class="section">
     <h3>Populares</h3>
+
     <div class="movies-row">
-        <div class="movie"><img src="https://picsum.photos/id/1020/200/300" alt="Película 6"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1021/200/300" alt="Película 7"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1022/200/300" alt="Película 8"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1023/200/300" alt="Película 9"></div>
-        <div class="movie"><img src="https://picsum.photos/id/1024/200/300" alt="Película 10"></div>
+        <div class="movie"><img src="https://picsum.photos/id/1020/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1021/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1022/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1023/200/300" alt=""></div>
+        <div class="movie"><img src="https://picsum.photos/id/1024/200/300" alt=""></div>
     </div>
 </section>
 
-<!-- Footer -->
 <footer>
     &copy; 2026 MC. Todos los derechos reservados.
 </footer>

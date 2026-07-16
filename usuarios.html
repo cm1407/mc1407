@@ -170,6 +170,76 @@ footer {
     color: #aaa;
     background-color: #141414;
 }
+
+    /*============================*/
+/* TARJETAS INFORMATIVAS */
+/*============================*/
+
+.cards{
+
+    width:min(1200px,95%);
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.info-card{
+
+    background:linear-gradient(135deg,#0052D4,#2D8CFF);
+
+    border-radius:22px;
+
+    padding:28px;
+
+    color:white;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+}
+
+.info-card h2{
+
+    margin-bottom:10px;
+
+    font-size:28px;
+
+}
+
+.info-card h4{
+
+    color:#d7ecff;
+
+    margin-bottom:18px;
+
+    font-weight:500;
+
+}
+
+.info-card p{
+
+    line-height:1.7;
+
+    font-size:16px;
+
+    color:#f2f8ff;
+
+}
 </style>
 
 </head>
